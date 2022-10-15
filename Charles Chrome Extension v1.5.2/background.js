@@ -4,13 +4,10 @@
 // chrome.action.onClicked.addListener(() => {
 //     openIframeSidebar("https://dyslexicreader.xyz/r?url=https://bubble.io/blog/improve-web-app-performance/");
 // });
-
 //uncomment lines below when the default action when clicking extension icon is to open the modal.Please also delete the full line '"default_popup": "popup.html",' in manifest.json and make sure there is no empty line left
-// chrome.action.onClicked.addListener(() => {
-//     openIframeModal("Dyslexic Reader", "https://dyslexicreader.xyz/r?url=https://bubble.io/blog/improve-web-app-performance/");
-// });
-
-
+chrome.action.onClicked.addListener(() => {
+openIframeModal("Dyslexic Reader", "http://drewsgreatidea.bubbleapps.io/version-test/search");
+});
 //message listener
 chrome.runtime.onMessage.addListener(
     function (request, sender, sendResponse) {
